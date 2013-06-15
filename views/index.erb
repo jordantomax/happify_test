@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happify Test</title>
+  <link href="/css/screen.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="page">
+    <div id="container">
+    </div>
+    <div id="messages">
+    </div>
+  </div>
+
+  <script id="challenge-list-item" type="text/template">
+    <h2>Challenges</h2>
+    <ul>
+      {{ _.each(challenges, function(challenge) { }}
+        <li><a href="/challenges/{{= challenge.id }}">{{= challenge.name }}</a></li>
+      {{ }); }}
+    </ul>
+  </script>
+
+  <script id="challenge-detail" type="text/template">
+    <a href="/" class="back">back to challenges</a>
+
+    <h2>{{= name }}</h2>
+    <h3>Select an activity</h3>
+
+    <form id="activities">
+      {{ _.each(activities, function(activity) { }}
+        <div>
+          <label>
+            <input type="checkbox" value="{{= activity.name }}"/>
+            {{= activity.name }}
+          </label>
+        </div>
+      {{ }); }}
+      <footer class="footer">
+        <input type="submit" class="submit" value="submit" />
+      </footer>
+    </form>
+  </script>
+
+  <script type="text/javascript">
+    window.params = <%= params %>;
+  </script>
+
+  <script type="text/javascript" src="/js/libs/jquery.js"></script>
+  <script type="text/javascript" src="/js/libs/underscore.js"></script>
+  <script type="text/javascript" src="/js/libs/backbone.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+  <script type="text/javascript" src="/js/challenge.js"></script>
+  <script type="text/javascript" src="/js/activities.js"></script>
+  <script type="text/javascript" src="/js/router.js"></script>
+</body>
+</html>

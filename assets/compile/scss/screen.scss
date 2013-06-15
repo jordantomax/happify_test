@@ -1,0 +1,63 @@
+$space: 20px;
+
+#page {
+  width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'helvetica neue', 'helvetica', 'arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-bottom: 0.25em;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: $space/4;
+}
+
+.back,
+.submit {
+  display: block;
+}
+
+form {
+  padding: $space/2 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#messages {
+  color: red;
+}
+
+.back {
+  padding-bottom: $space;
+  margin-bottom: $space;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.footer {
+  padding-top: $space;
+  margin-top: $space;
+  border-top: 1px solid #f5f5f5;
+}
