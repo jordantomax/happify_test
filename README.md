@@ -6,4 +6,4 @@ In order to view the application, please first ensure that you have all gems cor
 
 Once all gems are properly installed, boot the Sinatra server by running `ruby app.rb`. View the application by navigating to localhost:4567 in your browser.
 
-Note that all precompiled assets live in /assets/compile
+Note that all precompiled assets live in /assets/compile.
