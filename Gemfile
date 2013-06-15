@@ -1,6 +1,5 @@
 source "http://rubygems.org"
 
-# gem 'rb-fsevent'
 gem 'sinatra'
 
 group :assets do
