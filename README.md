@@ -1,7 +1,7 @@
-* Sample Happify Application
+# Sample Happify Application
 
-this sample application is built on Sinatra and Backbone js. 
+This sample application is built on Sinatra and Backbone JS. 
 
-In order to use, please first ensure that you have all gems correctly installed by running `bundle` in the root directory. If the bundle command is not recognized, please first install bundler by running `gem install bundler`
+In order to view the application, please first ensure that you have all gems correctly installed by running `bundle` in the root directory. If the bundle command is not recognized, please first install bundler by running `gem install bundler`. More information here: [http://gembundler.com/](http://gembundler.com/).
 
-Once all gems are properly installed, boot the Sinatra server by running `ruby app.js` within the root directory.
+Once all gems are properly installed, boot the Sinatra server by running `ruby app.rb` within the root directory, then in your browser, navigate to localhost:4567 to view the application.
